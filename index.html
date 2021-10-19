@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momontom</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="globalStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img class="backImg" />
+    <div class="grid">
+      <section class="to-do-list">
+        <h1 class="to-do-list__title">To Do List</h1>
+        <form class="to-do-list__form">
+          <input type="text" class="to-do-list__input" />
+        </form>
+        <ul class="to-do-list__lists"></ul>
+      </section>
+
+      <section class="d-day">
+        <form class="d-day__form">
+          <input
+            type="text"
+            class="d-day__input"
+            placeholder="디데이 내용 입력"
+          />
+          <input type="datetime-local" class="d-day__datetime" />
+        </form>
+        <div class="d-day__column">
+          <span class="d-day__name"></span>
+          <span class="d-day__day"></span>
+        </div>
+      </section>
+
+      <section class="clock">
+        <span class="clock__today">시계</span>
+        <span class="clock__time"></span>
+      </section>
+
+      <section class="my-info">
+        <form class="my-info__form">
+          <h1 class="my-info__title">What is your name?</h1>
+          <input
+            type="text"
+            class="my-info__input"
+            placeholder="이름을 입력하세요."
+          />
+        </form>
+        <span class="my-info__info"></span>
+      </section>
+
+      <section class="wise-quote">
+        <span class="wise-quote__name">이름</span>
+        <p class="wise-quote__content">내용</p>
+        <button class="wise-quote__button">change</button>
+      </section>
+
+      <section class="today-weather">
+        <h1 class="today-weather__title">오늘의 날씨</h1>
+        <div class="today-weather__info">
+          <span class="today-weather__weather"></span>
+          <span class="today-weather__temper-humi"></span>
+          <span class="today-weather__dust"></span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

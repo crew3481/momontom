@@ -1,0 +1,61 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  grid-template-areas: "todo clock weather" "todo info ." "dday quote .";
+  gap: 10px;
+  position: absolute;
+  color: white;
+}
+
+.to-do-list {
+  grid-area: todo;
+}
+
+.d-day {
+  grid-area: dday;
+}
+
+.clock {
+  grid-area: clock;
+  font-size: 30px;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.clock .clock__today {
+  margin-bottom: 14px;
+}
+
+.clock .clock__time {
+  font-size: 40px;
+}
+
+.my-info {
+  grid-area: info;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.my-info__form {
+  flex-direction: column;
+}
+
+.my-info__form .my-info__title {
+  margin-bottom: 15px;
+  font-size: 36px;
+}
+
+.wise-quote {
+  grid-area: quote;
+  flex-direction: column;
+}
+
+.wise-quote .wise-quote__name {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.today-weather {
+  grid-area: weather;
+}
