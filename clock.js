@@ -1,6 +1,21 @@
 const clockSection = document.querySelector(".clock");
-const time = clockSection.querySelector(".clock__time");
+const time1 = clockSection.querySelector(".clock__time");
 const dateSpan = clockSection.querySelector(".clock__today");
+
+function Time() {
+  const time = new Date();
+  const hour = time.getHours();
+  const minutes = time.getMinutes();
+  const seconds = time.getSeconds();
+
+  time1.innerHTML = `${hour}: ${minutes}: ${seconds}`;
+}
+
+function refresh() {
+  setInterval(Time, 1000);
+}
+
+refresh();
 
 /* 
     const clock = () => {};
